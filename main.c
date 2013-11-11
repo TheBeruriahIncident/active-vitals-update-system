@@ -1,5 +1,5 @@
-#include <complex>
-#include <math_defines.h>
+#define _USE_MATH_DEFINES
+#include <math.h>
 
 //the size of the spatial decompositions
 #define	xSliceSize (5)
@@ -15,6 +15,10 @@
 //how many samples to keep
 #define bufferSize (14)
 #define frameRate (8)
+
+//memory mapped IO, TODO: set these
+#define imageIO 0xDEADBEEF
+#define serialIO 0xDEADBEF
 
 #define amplitudeThreshold (15)
 #define minimumHeartRate (60)
@@ -39,15 +43,17 @@ int main(int argc, char** argv)
 	
 	while(true)
 	{	
+		//TODO: some sort of synchronization on frames
+	
 		for(int x = 0; x < xImageSize; x += xSliceSize)
 		{
 			for(int y = 0; y < yImageSize; y += ySliceSize)
 			{
 				//sum the red over a spatial block
 				long total = 0;
-				for(Row_Start = y; Row_Start < y + ySliceSize; Row_Start++)
+				for(int blockY = y; blockY < y + ySliceSize; blockY++)
 				{
-					for(Column_Start = x; Column_Start < x + xSliceSize; Column_Start++)
+					for(int blockX = x; blockX < x + xSliceSize; blockX++)
 					{
 						total += Red_Gain;
 					}
