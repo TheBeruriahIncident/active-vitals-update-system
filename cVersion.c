@@ -33,7 +33,7 @@
 #define maximumBin ((int)(float)maximumHeartRate / 60 / frameRate * bufferSize)
 
 /*
- code from http://www-ee.uta.edu/eeweb/ip/Courses/DSP_new/Programs/fft.cpp
+ this function four1 from http://www-ee.uta.edu/eeweb/ip/Courses/DSP_new/Programs/fft.cpp
  FFT/IFFT routine. (see pages 507-508 of Numerical Recipes in C)
 
  Inputs:
