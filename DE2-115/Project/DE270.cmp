@@ -1,0 +1,39 @@
+	component DE270 is
+		port (
+			bwe_n_to_the_ssram                         : out   std_logic_vector(0 downto 0);                     -- bwe_n_to_the_ssram
+			reset_n_to_the_ssram                       : out   std_logic_vector(0 downto 0);                     -- reset_n_to_the_ssram
+			chipenable1_n_to_the_ssram                 : out   std_logic_vector(0 downto 0);                     -- chipenable1_n_to_the_ssram
+			bw_n_to_the_ssram                          : out   std_logic_vector(3 downto 0);                     -- bw_n_to_the_ssram
+			outputenable_n_to_the_ssram                : out   std_logic_vector(0 downto 0);                     -- outputenable_n_to_the_ssram
+			adsc_n_to_the_ssram                        : out   std_logic_vector(0 downto 0);                     -- adsc_n_to_the_ssram
+			address_to_the_ssram                       : out   std_logic_vector(20 downto 0);                    -- address_to_the_ssram
+			data_to_and_from_the_ssram                 : inout std_logic_vector(31 downto 0) := (others => 'X'); -- data_to_and_from_the_ssram
+			reset_n                                    : in    std_logic                     := 'X';             -- reset_n
+			clk                                        : in    std_logic                     := 'X';             -- clk
+			rxd_to_the_uart                            : in    std_logic                     := 'X';             -- rxd
+			txd_from_the_uart                          : out   std_logic;                                        -- txd
+			cts_n_to_the_uart                          : in    std_logic                     := 'X';             -- cts_n
+			rts_n_from_the_uart                        : out   std_logic;                                        -- rts_n
+			avs_s1_export_clk_from_the_camera          : out   std_logic;                                        -- clk
+			avs_s1_export_address_from_the_camera      : out   std_logic_vector(1 downto 0);                     -- address
+			avs_s1_export_readdata_to_the_camera       : in    std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			avs_s1_export_read_from_the_camera         : out   std_logic;                                        -- read
+			avs_s1_export_writedata_from_the_camera    : out   std_logic_vector(31 downto 0);                    -- writedata
+			avs_s1_export_write_from_the_camera        : out   std_logic;                                        -- write
+			avs_s1_export_reset_from_the_camera        : out   std_logic;                                        -- reset
+			out_port_from_the_pio_led                  : out   std_logic_vector(5 downto 0);                     -- export
+			LCD_RS_from_the_lcd                        : out   std_logic;                                        -- RS
+			LCD_RW_from_the_lcd                        : out   std_logic;                                        -- RW
+			LCD_data_to_and_from_the_lcd               : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- data
+			LCD_E_from_the_lcd                         : out   std_logic;                                        -- E
+			pll_c0_out                                 : out   std_logic;                                        -- clk
+			pll_c1_out                                 : out   std_logic;                                        -- clk
+			locked_from_the_pll                        : out   std_logic;                                        -- export
+			phasedone_from_the_pll                     : out   std_logic;                                        -- export
+			jtag_debug_offchip_trace_clk_from_the_cpu  : out   std_logic;                                        -- jtag_debug_offchip_trace_clk
+			jtag_debug_offchip_trace_data_from_the_cpu : out   std_logic_vector(17 downto 0);                    -- jtag_debug_offchip_trace_data
+			jtag_debug_trigout_from_the_cpu            : out   std_logic;                                        -- jtag_debug_trigout
+			clkx2_to_the_cpu                           : in    std_logic                     := 'X'              -- clkx2
+		);
+	end component DE270;
+

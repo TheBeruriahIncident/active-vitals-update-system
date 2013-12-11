@@ -1,0 +1,238 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/Student/Desktop/Project/ --output-directory=C:/Users/Student/Desktop/Project/DE270/ --report-file=bsf:C:/Users/Student/Desktop/Project/DE2-70.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/Student/Desktop/Project/DE2-70.qsys
+Progress: Loading Project/DE2-70.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_mem
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding uart [altera_avalon_uart 13.0.1.99.2]
+Progress: Parameterizing module uart
+Progress: Adding camera [CAMERA_IF 1.0]
+Progress: Parameterizing module camera
+Progress: Adding timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer
+Progress: Adding timer_stamp [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer_stamp
+Progress: Adding pio_led [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module pio_led
+Progress: Adding lcd [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd
+Progress: Adding pll [altpll 13.0]
+Progress: Parameterizing module pll
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding tristate_bridge_bridge_0 [altera_tristate_conduit_bridge 13.0]
+Progress: Parameterizing module tristate_bridge_bridge_0
+Progress: Adding tristate_bridge_pinSharer_0 [altera_tristate_conduit_pin_sharer 13.0]
+Progress: Parameterizing module tristate_bridge_pinSharer_0
+Progress: Adding ssram [altera_generic_tristate_controller 13.0]
+Progress: Parameterizing module ssram
+Progress: Adding c0 [altera_clock_bridge 13.0]
+Progress: Parameterizing module c0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE2-70.cpu: CPUID control register value is 0. Please manually assign CPUID if creating multiple Nios II system
+Info: DE2-70.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DE2-70.sysid: Time stamp will be automatically updated when this component is generated.
+Warning: DE2-70.ssram: Properties (isMemoryDevice) have been set on interface uas - in composed mode these are ignored
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/Student/Desktop/Project/ --output-directory=C:/Users/Student/Desktop/Project/DE270/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/Student/Desktop/Project/DE2-70.sopcinfo --report-file=html:C:/Users/Student/Desktop/Project/DE2-70.html --report-file=qip:C:/Users/Student/Desktop/Project/DE270/synthesis/DE2-70.qip --report-file=cmp:C:/Users/Student/Desktop/Project/DE2-70.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/Student/Desktop/Project/DE2-70.qsys --language=VERILOG
+Progress: Loading Project/DE2-70.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_mem
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding uart [altera_avalon_uart 13.0.1.99.2]
+Progress: Parameterizing module uart
+Progress: Adding camera [CAMERA_IF 1.0]
+Progress: Parameterizing module camera
+Progress: Adding timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer
+Progress: Adding timer_stamp [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer_stamp
+Progress: Adding pio_led [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module pio_led
+Progress: Adding lcd [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd
+Progress: Adding pll [altpll 13.0]
+Progress: Parameterizing module pll
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding tristate_bridge_bridge_0 [altera_tristate_conduit_bridge 13.0]
+Progress: Parameterizing module tristate_bridge_bridge_0
+Progress: Adding tristate_bridge_pinSharer_0 [altera_tristate_conduit_pin_sharer 13.0]
+Progress: Parameterizing module tristate_bridge_pinSharer_0
+Progress: Adding ssram [altera_generic_tristate_controller 13.0]
+Progress: Parameterizing module ssram
+Progress: Adding c0 [altera_clock_bridge 13.0]
+Progress: Parameterizing module c0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE2-70.cpu: CPUID control register value is 0. Please manually assign CPUID if creating multiple Nios II system
+Info: DE2-70.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DE2-70.sysid: Time stamp will be automatically updated when this component is generated.
+Warning: DE2-70.ssram: Properties (isMemoryDevice) have been set on interface uas - in composed mode these are ignored
+Info: DE2-70: Generating DE2-70 "DE2-70" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 16 modules, 64 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 30 modules, 120 connections
+Info: merlin_domain_transform: After transform: 58 modules, 307 connections
+Info: merlin_router_transform: After transform: 72 modules, 363 connections
+Info: merlin_traffic_limiter_transform: After transform: 74 modules, 373 connections
+Info: reset_adaptation_transform: After transform: 76 modules, 294 connections
+Info: merlin_network_to_switch_transform: After transform: 103 modules, 352 connections
+Info: Inserting clock-crossing logic between cmd_xbar_demux_001.src11 and cmd_xbar_mux_011.sink0
+Info: Inserting clock-crossing logic between rsp_xbar_demux_011.src0 and rsp_xbar_mux_001.sink11
+Info: com_altera_sopcmodel_transforms_avalon_ClockCrossingTransform: After transform: 105 modules, 362 connections
+Info: limiter_update_transform: After transform: 105 modules, 364 connections
+Info: merlin_mm_transform: After transform: 105 modules, 364 connections
+Info: merlin_interrupt_mapper_transform: After transform: 106 modules, 367 connections
+Warning: DE2-70: "No matching role found for uart:s1:dataavailable (dataavailable)"
+Warning: DE2-70: "No matching role found for uart:s1:readyfordata (readyfordata)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2-70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: onchip_mem: Starting RTL generation for module 'DE2-70_onchip_mem'
+Info: onchip_mem:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DE2-70_onchip_mem --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0010_onchip_mem_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0010_onchip_mem_gen//DE2-70_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_mem: Done RTL generation for module 'DE2-70_onchip_mem'
+Info: onchip_mem: "DE2-70" instantiated altera_avalon_onchip_memory2 "onchip_mem"
+Info: jtag_uart: Starting RTL generation for module 'DE2-70_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DE2-70_jtag_uart --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0011_jtag_uart_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0011_jtag_uart_gen//DE2-70_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'DE2-70_jtag_uart'
+Info: jtag_uart: "DE2-70" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: uart: Starting RTL generation for module 'DE2-70_uart'
+Info: uart:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=DE2-70_uart --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0012_uart_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0012_uart_gen//DE2-70_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: uart: Done RTL generation for module 'DE2-70_uart'
+Info: uart: "DE2-70" instantiated altera_avalon_uart "uart"
+Info: camera: "DE2-70" instantiated CAMERA_IF "camera"
+Info: timer: Starting RTL generation for module 'DE2-70_timer'
+Info: timer:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=DE2-70_timer --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0014_timer_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0014_timer_gen//DE2-70_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: timer: Done RTL generation for module 'DE2-70_timer'
+Info: timer: "DE2-70" instantiated altera_avalon_timer "timer"
+Info: pio_led: Starting RTL generation for module 'DE2-70_pio_led'
+Info: pio_led:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DE2-70_pio_led --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0015_pio_led_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0015_pio_led_gen//DE2-70_pio_led_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_led: Done RTL generation for module 'DE2-70_pio_led'
+Info: pio_led: "DE2-70" instantiated altera_avalon_pio "pio_led"
+Info: lcd: Starting RTL generation for module 'DE2-70_lcd'
+Info: lcd:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207/generate_rtl.pl --name=DE2-70_lcd --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0016_lcd_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0016_lcd_gen//DE2-70_lcd_component_configuration.pl  --do_build_sim=0  ]
+Info: lcd: Done RTL generation for module 'DE2-70_lcd'
+Info: lcd: "DE2-70" instantiated altera_avalon_lcd_16207 "lcd"
+Error: Verilog HDL syntax error at de2-70_pll.v(37) near text "-";  expecting ";" File: /users/student/appdata/local/temp/alt6034_358356505750747874.dir/0017_sopcgen/de2-70_pll.v Line: 37
+Warning: Quartus II 32-bit Generate HDL Interface was unsuccessful. 1 error, 0 warnings
+Error:     Peak virtual memory: 334 megabytes
+Error:     Processing ended: Mon Nov 25 13:13:37 2013
+Error:     Elapsed time: 00:00:01
+Error:     Total CPU time (on all processors): 00:00:02
+Error: pll: File C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0017_sopcgen/DE2-70_pll.v written by generation callback did not contain a module called DE2-70_pll
+Info: pll: "DE2-70" instantiated altpll "pll"
+Error: Generation stopped, 86 or more modules remaining
+Info: DE2-70: Done DE2-70" with 34 modules, 11 files, 1082228 bytes
+Error: ip-generate failed with exit code 1: 7 Errors, 97 Warnings
+Info: Finished: Create HDL design files for synthesis

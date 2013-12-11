@@ -52,6 +52,6 @@ end
     
     maxVal = max(max(max(frequencies(:, :, minimumBin:maximumBin))));
     bestIndices = find(frequencies(:, :, minimumBin:maximumBin) == maxVal) + (minimumBin - 1)*M*N;
-    heartRate = floor(bestIndices/(M*N)) / framesInBuffer * cameraFPS * 60;
+    heartRate = ceil(bestIndices/(M*N)) / framesInBuffer * cameraFPS * 60;
     
     strcat(num2str(heartRate), ' beats per minute')

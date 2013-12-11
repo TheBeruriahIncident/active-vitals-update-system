@@ -1,0 +1,178 @@
+set_global_assignment -entity "DE270" -library "DE270" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "DE270" -library "DE270" -name IP_TOOL_VERSION "13.0sp1"
+set_global_assignment -entity "DE270" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "DE270" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../DE270.sopcinfo"]
+set_instance_assignment -entity "DE270" -library "DE270" -name SLD_INFO "QSYS_NAME DE270 HAS_SOPCINFO 1 GENERATION_ID 1385403304"
+set_global_assignment -library "DE270" -name MISC_FILE [file join $::quartus(qip_path) "../../DE270.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "DE270" -name MISC_FILE [file join $::quartus(qip_path) "../../DE270.qsys"]
+
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "DE270.v"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_irq_mapper.sv"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_handshake_clock_crosser.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_clock_crosser.v"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_pipeline_base.v"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_rsp_xbar_mux_001.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_rsp_xbar_mux.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_rsp_xbar_demux_003.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_rsp_xbar_demux.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_cmd_xbar_mux.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_cmd_xbar_demux_001.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_cmd_xbar_demux.sv"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "DE270" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_traffic_limiter.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_id_router_003.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_id_router.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_addr_router_001.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_addr_router.sv"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_ssram.v"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_tristate_controller_aggregator.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_tristate_controller_translator.sv"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_tristate_bridge_pinSharer_0.v"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_std_arbitrator_core.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_tristate_bridge_pinSharer_0_arbiter.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_tristate_bridge_pinSharer_0_pin_sharer.sv"]
+set_global_assignment -library "DE270" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_tristate_bridge_bridge_0.sv"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_sysid.v"]
+set_global_assignment -library "DE270" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu.ocp"]
+set_global_assignment -library "DE270" -name SDC_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu.sdc"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu.v"]
+set_global_assignment -library "DE270" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_bht_ram.mif"]
+set_global_assignment -library "DE270" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_dc_tag_ram.mif"]
+set_global_assignment -library "DE270" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_ic_tag_ram.mif"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_jtag_debug_module_tck.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_mult_cell.v"]
+set_global_assignment -library "DE270" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_ociram_default_contents.mif"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_oci_test_bench.v"]
+set_global_assignment -library "DE270" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_rf_ram_a.mif"]
+set_global_assignment -library "DE270" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_rf_ram_b.mif"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_cpu_test_bench.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_pll.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_lcd.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_pio_led.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_timer.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/CAMERA_IF.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_uart.v"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_jtag_uart.v"]
+set_global_assignment -library "DE270" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/DE270_onchip_mem.hex"]
+set_global_assignment -library "DE270" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DE270_onchip_mem.v"]
+
+set_global_assignment -entity "DE270_irq_mapper" -library "DE270" -name IP_TOOL_NAME "altera_irq_mapper"
+set_global_assignment -entity "DE270_irq_mapper" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_irq_mapper" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_st_handshake_clock_crosser" -library "DE270" -name IP_TOOL_NAME "altera_avalon_st_handshake_clock_crosser"
+set_global_assignment -entity "altera_avalon_st_handshake_clock_crosser" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_st_handshake_clock_crosser" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_rsp_xbar_mux_001" -library "DE270" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "DE270_rsp_xbar_mux_001" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_rsp_xbar_mux_001" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_rsp_xbar_mux" -library "DE270" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "DE270_rsp_xbar_mux" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_rsp_xbar_mux" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_rsp_xbar_demux_003" -library "DE270" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "DE270_rsp_xbar_demux_003" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_rsp_xbar_demux_003" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_rsp_xbar_demux" -library "DE270" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "DE270_rsp_xbar_demux" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_rsp_xbar_demux" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_cmd_xbar_mux" -library "DE270" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "DE270_cmd_xbar_mux" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_cmd_xbar_mux" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_cmd_xbar_demux_001" -library "DE270" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "DE270_cmd_xbar_demux_001" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_cmd_xbar_demux_001" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_cmd_xbar_demux" -library "DE270" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "DE270_cmd_xbar_demux" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_cmd_xbar_demux" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_reset_controller" -library "DE270" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_reset_controller" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "DE270" -name IP_TOOL_NAME "altera_merlin_traffic_limiter"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_id_router_003" -library "DE270" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "DE270_id_router_003" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_id_router_003" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_id_router" -library "DE270" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "DE270_id_router" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_id_router" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_addr_router_001" -library "DE270" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "DE270_addr_router_001" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_addr_router_001" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_addr_router" -library "DE270" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "DE270_addr_router" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_addr_router" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "DE270" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "DE270" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "DE270" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_agent" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "DE270" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "DE270" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_translator" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_ssram" -library "DE270" -name IP_TOOL_NAME "altera_generic_tristate_controller"
+set_global_assignment -entity "DE270_ssram" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_ssram" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_tristate_controller_aggregator" -library "DE270" -name IP_TOOL_NAME "altera_tristate_controller_aggregator"
+set_global_assignment -entity "altera_tristate_controller_aggregator" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_tristate_controller_aggregator" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_tristate_controller_translator" -library "DE270" -name IP_TOOL_NAME "altera_tristate_controller_translator"
+set_global_assignment -entity "altera_tristate_controller_translator" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_tristate_controller_translator" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_tristate_bridge_pinSharer_0" -library "DE270" -name IP_TOOL_NAME "altera_tristate_conduit_pin_sharer"
+set_global_assignment -entity "DE270_tristate_bridge_pinSharer_0" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_tristate_bridge_pinSharer_0" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_tristate_bridge_pinSharer_0_arbiter" -library "DE270" -name IP_TOOL_NAME "altera_merlin_std_arbitrator"
+set_global_assignment -entity "DE270_tristate_bridge_pinSharer_0_arbiter" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_tristate_bridge_pinSharer_0_arbiter" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_tristate_bridge_pinSharer_0_pin_sharer" -library "DE270" -name IP_TOOL_NAME "altera_tristate_conduit_pin_sharer_core"
+set_global_assignment -entity "DE270_tristate_bridge_pinSharer_0_pin_sharer" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_tristate_bridge_pinSharer_0_pin_sharer" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_tristate_bridge_bridge_0" -library "DE270" -name IP_TOOL_NAME "altera_tristate_conduit_bridge"
+set_global_assignment -entity "DE270_tristate_bridge_bridge_0" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_tristate_bridge_bridge_0" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_sysid" -library "DE270" -name IP_TOOL_NAME "altera_avalon_sysid_qsys"
+set_global_assignment -entity "DE270_sysid" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_sysid" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_cpu" -library "DE270" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "DE270_cpu" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_cpu" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_pll" -library "DE270" -name IP_TOOL_NAME "altpll"
+set_global_assignment -entity "DE270_pll" -library "DE270" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "DE270_pll" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_lcd" -library "DE270" -name IP_TOOL_NAME "altera_avalon_lcd_16207"
+set_global_assignment -entity "DE270_lcd" -library "DE270" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "DE270_lcd" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_pio_led" -library "DE270" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "DE270_pio_led" -library "DE270" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "DE270_pio_led" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_timer" -library "DE270" -name IP_TOOL_NAME "altera_avalon_timer"
+set_global_assignment -entity "DE270_timer" -library "DE270" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "DE270_timer" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_uart" -library "DE270" -name IP_TOOL_NAME "altera_avalon_uart"
+set_global_assignment -entity "DE270_uart" -library "DE270" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "DE270_uart" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_jtag_uart" -library "DE270" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
+set_global_assignment -entity "DE270_jtag_uart" -library "DE270" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "DE270_jtag_uart" -library "DE270" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "DE270_onchip_mem" -library "DE270" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "DE270_onchip_mem" -library "DE270" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "DE270_onchip_mem" -library "DE270" -name IP_TOOL_ENV "Qsys"

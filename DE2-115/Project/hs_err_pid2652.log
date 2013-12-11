@@ -1,0 +1,257 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d0b6b30, pid=2652, tid=8028
+#
+# JRE version: 6.0_23-b05
+# Java VM: Java HotSpot(TM) Client VM (19.0-b09 mixed mode windows-x86 )
+# Problematic frame:
+# C  [awt.dll+0xb6b30]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x28cbc800):  JavaThread "AWT-Windows" daemon [_thread_in_native, id=8028, stack(0x29740000,0x29790000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000000
+
+Registers:
+EAX=0x2978f8c8, EBX=0x28d812b8, ECX=0x000003d2, EDX=0x00000180
+ESP=0x2978f8b0, EBP=0x74fe1450, ESI=0x00000000, EDI=0x00000180
+EIP=0x6d0b6b30, EFLAGS=0x00010202
+
+Register to memory mapping:
+
+EAX=0x2978f8c8
+0x2978f8c8 is pointing into the stack for thread: 0x28cbc800
+"AWT-Windows" daemon prio=6 tid=0x28cbc800 nid=0x1f5c runnable [0x2978f000]
+   java.lang.Thread.State: RUNNABLE
+
+EBX=0x28d812b8
+0x28d812b8 is pointing to unknown location
+
+ECX=0x000003d2
+0x000003d2 is pointing to unknown location
+
+EDX=0x00000180
+0x00000180 is pointing to unknown location
+
+ESP=0x2978f8b0
+0x2978f8b0 is pointing into the stack for thread: 0x28cbc800
+"AWT-Windows" daemon prio=6 tid=0x28cbc800 nid=0x1f5c runnable [0x2978f000]
+   java.lang.Thread.State: RUNNABLE
+
+EBP=0x74fe1450
+0x74fe1450 is pointing to unknown location
+
+ESI=0x00000000
+0x00000000 is pointing to unknown location
+
+EDI=0x00000180
+0x00000180 is pointing to unknown location
+
+
+Top of Stack: (sp=0x2978f8b0)
+0x2978f8b0:   2978f8c8 00001000 00000000 28d5df00
+0x2978f8c0:   00000001 2978f8b8 2978f8bc 6d0ae4fd
+0x2978f8d0:   00000000 00000000 28d5df00 6d0ae5ca
+0x2978f8e0:   00000000 28d5df00 00000001 6d0ae6ce
+0x2978f8f0:   28d5df00 6d063812 28c62a50 00000000
+0x2978f900:   6d0b0630 00000001 6d102f58 6d102940
+0x2978f910:   28c62a50 6d0b1a32 6d102f50 6d0b1c19
+0x2978f920:   6d09a4b3 00000000 00001f5c 00000000 
+
+Instructions: (pc=0x6d0b6b30)
+0x6d0b6b20:   05 00 20 00 00 50 c1 e2 05 8d 44 24 14 50 8b fa
+0x6d0b6b30:   8b 16 57 c1 e1 05 51 56 ff 52 2c 85 c0 0f 8c 93 
+
+
+Stack: [0x29740000,0x29790000],  sp=0x2978f8b0,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [awt.dll+0xb6b30]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  sun.awt.windows.WToolkit.eventLoop()V+0
+j  sun.awt.windows.WToolkit.run()V+52
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0251d000 JavaThread "Thread-1" daemon [_thread_in_native, id=7356, stack(0x29a50000,0x29aa0000)]
+  0x0251ac00 JavaThread "Thread-172" [_thread_blocked, id=7228, stack(0x29930000,0x29980000)]
+  0x0251cc00 JavaThread "Tcl Isolation Thread" daemon [_thread_blocked, id=7512, stack(0x2ba80000,0x2bad0000)]
+  0x28f1c400 JavaThread "TimerQueue" daemon [_thread_blocked, id=7732, stack(0x2bb50000,0x2bba0000)]
+  0x28d56000 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=7824, stack(0x29e40000,0x29e90000)]
+  0x28cdf000 JavaThread "Command Watcher" daemon [_thread_blocked, id=4836, stack(0x29be0000,0x29c30000)]
+=>0x28cbc800 JavaThread "AWT-Windows" daemon [_thread_in_native, id=8028, stack(0x29740000,0x29790000)]
+  0x28cba400 JavaThread "AWT-Shutdown" [_thread_blocked, id=2924, stack(0x296b0000,0x29700000)]
+  0x28cb7c00 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=5020, stack(0x29520000,0x29570000)]
+  0x27d60000 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=3776, stack(0x286c0000,0x28710000)]
+  0x27d5b400 JavaThread "CompilerThread0" daemon [_thread_blocked, id=8068, stack(0x28630000,0x28680000)]
+  0x27d5a400 JavaThread "Attach Listener" daemon [_thread_blocked, id=1248, stack(0x285a0000,0x285f0000)]
+  0x27d57400 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=6496, stack(0x28510000,0x28560000)]
+  0x27d24400 JavaThread "Finalizer" daemon [_thread_blocked, id=2352, stack(0x28050000,0x280a0000)]
+  0x27d22c00 JavaThread "Reference Handler" daemon [_thread_blocked, id=1132, stack(0x27fc0000,0x28010000)]
+  0x00d1ec00 JavaThread "main" [_thread_blocked, id=5348, stack(0x00c30000,0x00c80000)]
+
+Other Threads:
+  0x27d1f000 VMThread [stack: 0x27f30000,0x27f80000] [id=6208]
+  0x27d71c00 WatcherThread [stack: 0x28750000,0x287a0000] [id=2296]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 38208K, used 25865K [0x04790000, 0x07100000, 0x0ee30000)
+  eden space 33984K,  64% used [0x04790000, 0x05d00d90, 0x068c0000)
+  from space 4224K,  92% used [0x068c0000, 0x06c91a28, 0x06ce0000)
+  to   space 4224K,   0% used [0x06ce0000, 0x06ce0000, 0x07100000)
+ tenured generation   total 84832K, used 67835K [0x0ee30000, 0x14108000, 0x23b90000)
+   the space 84832K,  79% used [0x0ee30000, 0x1306ede0, 0x1306ee00, 0x14108000)
+ compacting perm gen  total 27904K, used 27874K [0x23b90000, 0x256d0000, 0x27b90000)
+   the space 27904K,  99% used [0x23b90000, 0x256c8b98, 0x256c8c00, 0x256d0000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\altera\13.0sp1\quartus\bin\jre\bin\java.exe
+0x76fa0000 - 0x77120000 	C:\Windows\SysWOW64\ntdll.dll
+0x74fd0000 - 0x750e0000 	C:\Windows\syswow64\kernel32.dll
+0x750e0000 - 0x75127000 	C:\Windows\syswow64\KERNELBASE.dll
+0x74850000 - 0x748f0000 	C:\Windows\syswow64\ADVAPI32.dll
+0x74c10000 - 0x74cbc000 	C:\Windows\syswow64\msvcrt.dll
+0x760d0000 - 0x760e9000 	C:\Windows\SysWOW64\sechost.dll
+0x76330000 - 0x76420000 	C:\Windows\syswow64\RPCRT4.dll
+0x74680000 - 0x746e0000 	C:\Windows\syswow64\SspiCli.dll
+0x74670000 - 0x7467c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x7c340000 - 0x7c396000 	C:\altera\13.0sp1\quartus\bin\jre\bin\msvcr71.dll
+0x6d7f0000 - 0x6da9c000 	C:\altera\13.0sp1\quartus\bin\jre\bin\client\jvm.dll
+0x74990000 - 0x74a90000 	C:\Windows\syswow64\USER32.dll
+0x76650000 - 0x766e0000 	C:\Windows\syswow64\GDI32.dll
+0x74d50000 - 0x74d5a000 	C:\Windows\syswow64\LPK.dll
+0x748f0000 - 0x7498d000 	C:\Windows\syswow64\USP10.dll
+0x72d80000 - 0x72db2000 	C:\Windows\system32\WINMM.dll
+0x751f0000 - 0x75250000 	C:\Windows\system32\IMM32.DLL
+0x760f0000 - 0x761bc000 	C:\Windows\syswow64\MSCTF.dll
+0x72930000 - 0x7297c000 	C:\Windows\system32\apphelp.dll
+0x6d700000 - 0x6d722000 	C:\altera\13.0sp1\quartus\bin\jre\bin\splashscreen.dll
+0x70de0000 - 0x70e60000 	C:\Windows\system32\uxtheme.dll
+0x6d7a0000 - 0x6d7ac000 	C:\altera\13.0sp1\quartus\bin\jre\bin\verify.dll
+0x6d320000 - 0x6d33f000 	C:\altera\13.0sp1\quartus\bin\jre\bin\java.dll
+0x70590000 - 0x70599000 	C:\ProgramData\Real\RealPlayer\BrowserRecordPlugin\Chrome\Hook\rpchrome150browserrecordhelper.dll
+0x72a40000 - 0x72ae3000 	C:\Windows\WinSxS\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.6161_none_50934f2ebcb7eb57\MSVCR90.dll
+0x75250000 - 0x75e9a000 	C:\Windows\syswow64\SHELL32.dll
+0x74bb0000 - 0x74c07000 	C:\Windows\syswow64\SHLWAPI.dll
+0x6d280000 - 0x6d288000 	C:\altera\13.0sp1\quartus\bin\jre\bin\hpi.dll
+0x76320000 - 0x76325000 	C:\Windows\syswow64\PSAPI.DLL
+0x6d7e0000 - 0x6d7ef000 	C:\altera\13.0sp1\quartus\bin\jre\bin\zip.dll
+0x761c0000 - 0x7631c000 	C:\Windows\system32\ole32.dll
+0x74d70000 - 0x74df3000 	C:\Windows\syswow64\CLBCatQ.DLL
+0x75130000 - 0x751bf000 	C:\Windows\syswow64\OLEAUT32.dll
+0x71660000 - 0x71665000 	C:\altera\13.0sp1\quartus\bin\sld_utiljni.dll
+0x60ed0000 - 0x60f8f000 	C:\Windows\system32\MSVCR100.dll
+0x6e1d0000 - 0x6e2b7000 	C:\altera\13.0sp1\quartus\bin\tcl85.dll
+0x75ea0000 - 0x75ed5000 	C:\Windows\syswow64\WS2_32.dll
+0x74e00000 - 0x74e06000 	C:\Windows\syswow64\NSI.dll
+0x60570000 - 0x60607000 	C:\altera\13.0sp1\quartus\bin\ccl_sqlite3.dll
+0x71700000 - 0x7170d000 	C:\altera\13.0sp1\quartus\bin\ccl_sqlite3_jdbc_jni_bridge.dll
+0x6d000000 - 0x6d14a000 	C:\altera\13.0sp1\quartus\bin\jre\bin\awt.dll
+0x72710000 - 0x72761000 	C:\Windows\system32\WINSPOOL.DRV
+0x724e0000 - 0x7267e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x71170000 - 0x71183000 	C:\Windows\system32\DWMAPI.DLL
+0x6d230000 - 0x6d27f000 	C:\altera\13.0sp1\quartus\bin\jre\bin\fontmanager.dll
+0x6d600000 - 0x6d613000 	C:\altera\13.0sp1\quartus\bin\jre\bin\net.dll
+0x72ce0000 - 0x72d1c000 	C:\Windows\system32\mswsock.dll
+0x718b0000 - 0x718b6000 	C:\Windows\System32\wship6.dll
+0x728e0000 - 0x728fc000 	C:\Windows\system32\iphlpapi.dll
+0x728d0000 - 0x728d7000 	C:\Windows\system32\WINNSI.DLL
+0x71760000 - 0x71772000 	C:\Windows\system32\dhcpcsvc.DLL
+0x71750000 - 0x7175d000 	C:\Windows\system32\dhcpcsvc6.DLL
+0x67d00000 - 0x67ec3000 	C:\Windows\system32\d3d9.dll
+0x73220000 - 0x73229000 	C:\Windows\system32\VERSION.dll
+0x6e480000 - 0x6e486000 	C:\Windows\system32\d3d8thk.dll
+0x67120000 - 0x67cfc000 	C:\Windows\system32\nvd3dum.dll
+0x707c0000 - 0x707e5000 	C:\Windows\system32\powrprof.dll
+0x764b0000 - 0x7664d000 	C:\Windows\syswow64\SETUPAPI.dll
+0x74820000 - 0x74847000 	C:\Windows\syswow64\CFGMGR32.dll
+0x746e0000 - 0x746f2000 	C:\Windows\syswow64\DEVOBJ.dll
+0x6d620000 - 0x6d629000 	C:\altera\13.0sp1\quartus\bin\jre\bin\nio.dll
+0x6e620000 - 0x6e715000 	C:\Windows\system32\propsys.dll
+0x72980000 - 0x729a1000 	C:\Windows\system32\ntmarta.dll
+0x75ee0000 - 0x75f25000 	C:\Windows\syswow64\WLDAP32.dll
+0x6e2c0000 - 0x6e458000 	C:\Windows\system32\NetworkExplorer.dll
+0x616d0000 - 0x616ff000 	C:\Windows\System32\shdocvw.dll
+0x72f30000 - 0x72f3b000 	C:\Windows\system32\profapi.dll
+0x6df20000 - 0x6df2a000 	C:\Windows\system32\slc.dll
+0x67ed0000 - 0x67fcb000 	C:\Windows\system32\WindowsCodecs.dll
+0x71620000 - 0x71651000 	C:\Windows\system32\EhStorShell.dll
+0x60ca0000 - 0x60d10000 	C:\Windows\system32\ntshrui.dll
+0x727b0000 - 0x727c9000 	C:\Windows\system32\srvcli.dll
+0x70b30000 - 0x70b3b000 	C:\Windows\system32\cscapi.dll
+0x718d0000 - 0x718e2000 	C:\Windows\system32\MPR.dll
+0x714c0000 - 0x714c8000 	C:\Windows\System32\drprov.dll
+0x72900000 - 0x72929000 	C:\Windows\System32\WINSTA.dll
+0x714a0000 - 0x714b4000 	C:\Windows\System32\ntlanman.dll
+0x71480000 - 0x71497000 	C:\Windows\System32\davclnt.dll
+0x71470000 - 0x71478000 	C:\Windows\System32\DAVHLPR.dll
+0x727a0000 - 0x727af000 	C:\Windows\system32\wkscli.dll
+0x727d0000 - 0x727d9000 	C:\Windows\system32\netutils.dll
+0x604e0000 - 0x60569000 	C:\Windows\system32\PortableDeviceApi.dll
+0x76420000 - 0x7644d000 	C:\Windows\syswow64\WINTRUST.dll
+0x75f30000 - 0x7604e000 	C:\Windows\syswow64\CRYPT32.dll
+0x74d60000 - 0x74d6c000 	C:\Windows\syswow64\MSASN1.dll
+0x71440000 - 0x71462000 	C:\Windows\system32\EhStorAPI.dll
+0x6e4c0000 - 0x6e4c9000 	C:\Windows\system32\LINKINFO.dll
+0x72800000 - 0x72808000 	C:\Windows\system32\Secur32.dll
+0x70db0000 - 0x70dbf000 	C:\Windows\system32\samcli.dll
+0x2f620000 - 0x2f632000 	C:\Windows\system32\SAMLIB.dll
+0x6d1a0000 - 0x6d1c3000 	C:\altera\13.0sp1\quartus\bin\jre\bin\dcpr.dll
+0x280d0000 - 0x280e2000 	C:\Program Files\Lenovo\HOTKEY\hkvolkey.DLL
+0x73280000 - 0x73296000 	C:\Windows\system32\CRYPTSP.dll
+0x73240000 - 0x7327b000 	C:\Windows\system32\rsaenh.dll
+0x72f50000 - 0x72f67000 	C:\Windows\system32\USERENV.dll
+0x71160000 - 0x71170000 	C:\Windows\system32\NLAapi.dll
+0x733f0000 - 0x73400000 	C:\Windows\system32\napinsp.dll
+0x71140000 - 0x71152000 	C:\Windows\system32\pnrpnsp.dll
+0x70dd0000 - 0x70ddd000 	C:\Windows\system32\wshbth.dll
+0x71780000 - 0x717c4000 	C:\Windows\system32\DNSAPI.dll
+0x70dc0000 - 0x70dc8000 	C:\Windows\System32\winrnr.dll
+0x72cd0000 - 0x72cd5000 	C:\Windows\System32\wshtcpip.dll
+0x70bd0000 - 0x70bd6000 	C:\Windows\system32\rasadhlp.dll
+0x70af0000 - 0x70b28000 	C:\Windows\System32\fwpuclnt.dll
+0x71430000 - 0x71436000 	C:\altera\13.0sp1\quartus\bin\tcl_jni_bridge.dll
+
+VM Arguments:
+jvm_args: -Xmx500m -XX:+UseSerialGC 
+java_command: com.altera.ipedit.QsysEditorApp --project-dir=C:/Users/Student/Desktop/Project/ --system-info=DEVICE_FAMILY=Cyclone IV E --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --host-controller
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files (x86)\Java\jre6\lib\ext\QTJava.zip
+PATH=C:/altera/13.0sp1/quartus/bin;c:\altera\13.0sp1\quartus\bin64\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\ThinkPad\Bluetooth Software\;C:\Program Files\ThinkPad\Bluetooth Software\syswow64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files (x86)\Common Files\Lenovo;C:\Program Files (x86)\Common Files\HP\Digital Imaging\bin;C:\Program Files (x86)\HP\Digital Imaging\bin\;C:\Program Files (x86)\HP\Digital Imaging\bin\Qt\Qt 4.3.3;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\VanDyke Software\SecureFX\;C:\Program Files (x86)\GTK2-Runtime\bin;C:\altera\13.0sp1\modelsim_ase\win32aloem
+USERNAME=Student
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 2, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 4050608k(1759964k free), swap 8099356k(4786116k free)
+
+vm_info: Java HotSpot(TM) Client VM (19.0-b09) for windows-x86 JRE (1.6.0_23-b05), built on Nov 12 2010 15:00:43 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Wed Nov 20 18:40:59 2013
+elapsed time: 14990 seconds
+

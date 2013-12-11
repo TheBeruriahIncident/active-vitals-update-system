@@ -1,0 +1,296 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/Student/Desktop/Project/ --output-directory=C:/Users/Student/Desktop/Project/DE270/ --report-file=bsf:C:/Users/Student/Desktop/Project/DE270.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/Student/Desktop/Project/DE270.qsys
+Progress: Loading Project/DE270.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_mem
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding uart [altera_avalon_uart 13.0.1.99.2]
+Progress: Parameterizing module uart
+Progress: Adding camera [CAMERA_IF 1.0]
+Progress: Parameterizing module camera
+Progress: Adding timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer
+Progress: Adding timer_stamp [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer_stamp
+Progress: Adding pio_led [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module pio_led
+Progress: Adding lcd [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd
+Progress: Adding pll [altpll 13.0]
+Progress: Parameterizing module pll
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding tristate_bridge_bridge_0 [altera_tristate_conduit_bridge 13.0]
+Progress: Parameterizing module tristate_bridge_bridge_0
+Progress: Adding tristate_bridge_pinSharer_0 [altera_tristate_conduit_pin_sharer 13.0]
+Progress: Parameterizing module tristate_bridge_pinSharer_0
+Progress: Adding ssram [altera_generic_tristate_controller 13.0]
+Progress: Parameterizing module ssram
+Progress: Adding c0 [altera_clock_bridge 13.0]
+Progress: Parameterizing module c0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE270.cpu: CPUID control register value is 0. Please manually assign CPUID if creating multiple Nios II system
+Info: DE270.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DE270.sysid: Time stamp will be automatically updated when this component is generated.
+Warning: DE270.ssram: Properties (isMemoryDevice) have been set on interface uas - in composed mode these are ignored
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/Student/Desktop/Project/ --output-directory=C:/Users/Student/Desktop/Project/DE270/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/Student/Desktop/Project/DE270.sopcinfo --report-file=html:C:/Users/Student/Desktop/Project/DE270.html --report-file=qip:C:/Users/Student/Desktop/Project/DE270/synthesis/DE270.qip --report-file=cmp:C:/Users/Student/Desktop/Project/DE270.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/Student/Desktop/Project/DE270.qsys --language=VERILOG
+Progress: Loading Project/DE270.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_mem
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding uart [altera_avalon_uart 13.0.1.99.2]
+Progress: Parameterizing module uart
+Progress: Adding camera [CAMERA_IF 1.0]
+Progress: Parameterizing module camera
+Progress: Adding timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer
+Progress: Adding timer_stamp [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer_stamp
+Progress: Adding pio_led [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module pio_led
+Progress: Adding lcd [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd
+Progress: Adding pll [altpll 13.0]
+Progress: Parameterizing module pll
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding tristate_bridge_bridge_0 [altera_tristate_conduit_bridge 13.0]
+Progress: Parameterizing module tristate_bridge_bridge_0
+Progress: Adding tristate_bridge_pinSharer_0 [altera_tristate_conduit_pin_sharer 13.0]
+Progress: Parameterizing module tristate_bridge_pinSharer_0
+Progress: Adding ssram [altera_generic_tristate_controller 13.0]
+Progress: Parameterizing module ssram
+Progress: Adding c0 [altera_clock_bridge 13.0]
+Progress: Parameterizing module c0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE270.cpu: CPUID control register value is 0. Please manually assign CPUID if creating multiple Nios II system
+Info: DE270.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DE270.sysid: Time stamp will be automatically updated when this component is generated.
+Warning: DE270.ssram: Properties (isMemoryDevice) have been set on interface uas - in composed mode these are ignored
+Info: DE270: Generating DE270 "DE270" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 16 modules, 64 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 30 modules, 120 connections
+Info: merlin_domain_transform: After transform: 58 modules, 307 connections
+Info: merlin_router_transform: After transform: 72 modules, 363 connections
+Info: merlin_traffic_limiter_transform: After transform: 74 modules, 373 connections
+Info: reset_adaptation_transform: After transform: 76 modules, 294 connections
+Info: merlin_network_to_switch_transform: After transform: 103 modules, 352 connections
+Info: Inserting clock-crossing logic between cmd_xbar_demux_001.src11 and cmd_xbar_mux_011.sink0
+Info: Inserting clock-crossing logic between rsp_xbar_demux_011.src0 and rsp_xbar_mux_001.sink11
+Info: com_altera_sopcmodel_transforms_avalon_ClockCrossingTransform: After transform: 105 modules, 362 connections
+Info: limiter_update_transform: After transform: 105 modules, 364 connections
+Info: merlin_mm_transform: After transform: 105 modules, 364 connections
+Info: merlin_interrupt_mapper_transform: After transform: 106 modules, 367 connections
+Warning: DE270: "No matching role found for uart:s1:dataavailable (dataavailable)"
+Warning: DE270: "No matching role found for uart:s1:readyfordata (readyfordata)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE270: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: onchip_mem: Starting RTL generation for module 'DE270_onchip_mem'
+Info: onchip_mem:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DE270_onchip_mem --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0019_onchip_mem_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0019_onchip_mem_gen//DE270_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_mem: Done RTL generation for module 'DE270_onchip_mem'
+Info: onchip_mem: "DE270" instantiated altera_avalon_onchip_memory2 "onchip_mem"
+Info: jtag_uart: Starting RTL generation for module 'DE270_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DE270_jtag_uart --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0020_jtag_uart_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0020_jtag_uart_gen//DE270_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'DE270_jtag_uart'
+Info: jtag_uart: "DE270" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: uart: Starting RTL generation for module 'DE270_uart'
+Info: uart:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=DE270_uart --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0021_uart_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0021_uart_gen//DE270_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: uart: Done RTL generation for module 'DE270_uart'
+Info: uart: "DE270" instantiated altera_avalon_uart "uart"
+Info: camera: "DE270" instantiated CAMERA_IF "camera"
+Info: timer: Starting RTL generation for module 'DE270_timer'
+Info: timer:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=DE270_timer --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0023_timer_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0023_timer_gen//DE270_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: timer: Done RTL generation for module 'DE270_timer'
+Info: timer: "DE270" instantiated altera_avalon_timer "timer"
+Info: pio_led: Starting RTL generation for module 'DE270_pio_led'
+Info: pio_led:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DE270_pio_led --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0024_pio_led_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0024_pio_led_gen//DE270_pio_led_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_led: Done RTL generation for module 'DE270_pio_led'
+Info: pio_led: "DE270" instantiated altera_avalon_pio "pio_led"
+Info: lcd: Starting RTL generation for module 'DE270_lcd'
+Info: lcd:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207/generate_rtl.pl --name=DE270_lcd --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0025_lcd_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0025_lcd_gen//DE270_lcd_component_configuration.pl  --do_build_sim=0  ]
+Info: lcd: Done RTL generation for module 'DE270_lcd'
+Info: lcd: "DE270" instantiated altera_avalon_lcd_16207 "lcd"
+Info: pll: "DE270" instantiated altpll "pll"
+Info: cpu: Starting RTL generation for module 'DE270_cpu'
+Info: cpu:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=DE270_cpu --dir=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0028_cpu_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Student/AppData/Local/Temp/alt6034_358356505750747874.dir/0028_cpu_gen//DE270_cpu_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: cpu: # 2013.11.25 13:15:18 (*) Starting Nios II generation
+Info: cpu: # 2013.11.25 13:15:18 (*)   Checking for plaintext license.
+Info: cpu: # 2013.11.25 13:15:18 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: cpu: # 2013.11.25 13:15:18 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2013.11.25 13:15:18 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2013.11.25 13:15:18 (*)   Plaintext license not found.
+Info: cpu: # 2013.11.25 13:15:18 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2013.11.25 13:15:19 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: cpu: # 2013.11.25 13:15:19 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2013.11.25 13:15:19 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2013.11.25 13:15:19 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: cpu: # 2013.11.25 13:15:19 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2013.11.25 13:15:19 (*)   Creating all objects for CPU
+Info: cpu: # 2013.11.25 13:15:19 (*)     Testbench
+Info: cpu: # 2013.11.25 13:15:19 (*)     Instruction decoding
+Info: cpu: # 2013.11.25 13:15:19 (*)       Instruction fields
+Info: cpu: # 2013.11.25 13:15:20 (*)       Instruction decodes
+Info: cpu: # 2013.11.25 13:15:20 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2013.11.25 13:15:21 (*)       Instruction controls
+Info: cpu: # 2013.11.25 13:15:21 (*)     Pipeline frontend
+Info: cpu: # 2013.11.25 13:15:21 (*)     Pipeline backend
+Info: cpu: # 2013.11.25 13:15:25 (*)   Generating RTL from CPU objects
+Info: cpu: # 2013.11.25 13:15:31 (*)   Creating encrypted RTL
+Info: cpu: # 2013.11.25 13:15:33 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'DE270_cpu'
+Info: cpu: "DE270" instantiated altera_nios2_qsys "cpu"
+Info: sysid: "DE270" instantiated altera_avalon_sysid_qsys "sysid"
+Info: tristate_bridge_bridge_0: "DE270" instantiated altera_tristate_conduit_bridge "tristate_bridge_bridge_0"
+Info: pipeline_bridge_swap_transform: After transform: 4 modules, 7 connections
+Info: No custom instruction connections, skipping transform 
+Info: No Avalon connections, skipping transform 
+Info: merlin_translator_transform: After transform: 4 modules, 7 connections
+Info: tristate_bridge_pinSharer_0: "DE270" instantiated altera_tristate_conduit_pin_sharer "tristate_bridge_pinSharer_0"
+Info: pipeline_bridge_swap_transform: After transform: 5 modules, 10 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 5 modules, 10 connections
+Info: ssram: "DE270" instantiated altera_generic_tristate_controller "ssram"
+Info: cpu_instruction_master_translator: "DE270" instantiated altera_merlin_master_translator "cpu_instruction_master_translator"
+Info: cpu_jtag_debug_module_translator: "DE270" instantiated altera_merlin_slave_translator "cpu_jtag_debug_module_translator"
+Info: cpu_instruction_master_translator_avalon_universal_master_0_agent: "DE270" instantiated altera_merlin_master_agent "cpu_instruction_master_translator_avalon_universal_master_0_agent"
+Info: cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent: "DE270" instantiated altera_merlin_slave_agent "cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "DE270" instantiated altera_avalon_sc_fifo "cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "DE270" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "DE270" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "DE270" instantiated altera_merlin_router "id_router"
+Info: id_router_003: "DE270" instantiated altera_merlin_router "id_router_003"
+Info: limiter: "DE270" instantiated altera_merlin_traffic_limiter "limiter"
+Info: rst_controller: "DE270" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "DE270" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "DE270" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "DE270" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "DE270" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_003: "DE270" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_003"
+Info: rsp_xbar_mux: "DE270" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/Student/Desktop/Project/DE270/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "DE270" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/Users/Student/Desktop/Project/DE270/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "DE270" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/Student/Desktop/Project/DE270/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: irq_mapper: "DE270" instantiated altera_irq_mapper "irq_mapper"
+Info: pin_sharer: "tristate_bridge_pinSharer_0" instantiated altera_tristate_conduit_pin_sharer_core "pin_sharer"
+Info: arbiter: "tristate_bridge_pinSharer_0" instantiated altera_merlin_std_arbitrator "arbiter"
+Info: tdt: "ssram" instantiated altera_tristate_controller_translator "tdt"
+Info: tda: "ssram" instantiated altera_tristate_controller_aggregator "tda"
+Info: DE270: Done DE270" with 38 modules, 141 files, 3262406 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

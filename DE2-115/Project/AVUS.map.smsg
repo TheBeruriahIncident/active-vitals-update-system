@@ -1,0 +1,29 @@
+Warning (10273): Verilog HDL warning at Sdram_Control.v(320): extended using "x" or "z"
+Info (10281): Verilog HDL Declaration information at DE270_id_router_003.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_id_router_003.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_id_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_id_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_addr_router_001.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_addr_router_001.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_addr_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_addr_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_id_router_003.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_id_router_003.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_id_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_id_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_addr_router_001.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_addr_router_001.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_addr_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE270_addr_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(1233): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(1235): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(1279): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(1281): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(1325): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(1327): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(1371): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(1373): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(2556): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(2558): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(2714): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at DE270_cpu.v(3631): conditional expression evaluates to a constant
