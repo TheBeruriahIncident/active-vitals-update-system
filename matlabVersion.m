@@ -1,6 +1,6 @@
 %parameters
 cameraFPS = 4;
-framesInBuffer = 16;
+framesInBuffer = 50;
 blockWidth = 30;
 blockHeight = 30;
 sampleWidth = 8;
@@ -13,7 +13,7 @@ minimumBin = ceil(minimumHeartRate / 60 / cameraFPS * framesInBuffer);
 maximumBin = floor(maximumHeartRate / 60 / cameraFPS * framesInBuffer);
 
 % Load input video and figure length
-inputVideo = VideoReader('Adam1.mov');
+inputVideo = VideoReader('Adam2.mov');
 numFrames = get(inputVideo, 'NumberOfFrames');
 frameRate = get(inputVideo, 'FrameRate');
 frameOffset = uint8(frameRate / cameraFPS);
@@ -22,7 +22,8 @@ frameOffset = uint8(frameRate / cameraFPS);
 samples = zeros(ceil(N/blockWidth-1), ceil(M/blockHeight-1), framesInBuffer);
 frequencies = zeros(ceil(N/blockWidth-1), ceil(M/blockHeight-1), framesInBuffer);
 
-for i = 1:frameOffset:framesInBuffer * frameOffset
+offset = 10;
+for i = 1 + offset:frameOffset:framesInBuffer * frameOffset + offset
     i
     frame = read(inputVideo, i);
     
